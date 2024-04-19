@@ -7,16 +7,17 @@ public class Calculadora {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 
-		System.out.println("Menú calculadora");
-		System.out.println("----------------");
-		System.out.println("1. Dividir");
-		System.out.println("0. Salir");
-		System.out.print("Dime una opción: ");
-		int respuestaUsuario = Integer.parseInt(s.nextLine());
-
-		System.out.println();
-
+		int respuestaUsuario;
+		
 		do {
+			System.out.println("Menú calculadora");
+			System.out.println("----------------");
+			System.out.println("1. Dividir");
+			System.out.println("0. Salir");
+			System.out.print("Dime una opción: ");
+			respuestaUsuario = Integer.parseInt(s.nextLine());
+
+			System.out.println();
 
 			switch (respuestaUsuario) {
 			case 0:
