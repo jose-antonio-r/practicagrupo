@@ -68,6 +68,8 @@ public class Calculadora {
 
 		} while (opcion != 0);
 
+		System.out.println("Cerrando calculadora...");
+		
 		teclado.close();
 
 	}
