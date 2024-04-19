@@ -15,6 +15,7 @@ public class Calculadora {
 			System.out.println("1. Multiplicar");
 			System.out.println("2. Dividir");
 			System.out.println("3. Sumar");
+			System.out.println("4. Restar");
 			System.out.println("--------------------");
 			System.out.print("Elige una opción: ");
 			opcion = Integer.parseInt(teclado.nextLine());
@@ -22,24 +23,25 @@ public class Calculadora {
 			switch (opcion) {
 			case 1:
 				System.out.print("Introduce el primer valor: ");
-				double valor1 = Integer.parseInt(teclado.nextLine());
+				double multiplicacion1 = Integer.parseInt(teclado.nextLine());
 
 				System.out.print("Introduce el segundo valor: ");
-				double valor2 = Integer.parseInt(teclado.nextLine());
+				double multiplicacion2 = Integer.parseInt(teclado.nextLine());
 
-				System.out.printf("El resultado es: %.2f\n", valor1 * valor2);
+				System.out.printf("El resultado es: %.2f\n", multiplicacion1 * multiplicacion2);
 
 				break;
 			case 2:
 				System.out.print("Introduce el primer valor: ");
-				double numero1 = Integer.parseInt(teclado.nextLine());
+				double divison1 = Integer.parseInt(teclado.nextLine());
 
 				System.out.print("Introduce el segundo valor: ");
-				double numero2 = Integer.parseInt(teclado.nextLine());
+				double division2 = Integer.parseInt(teclado.nextLine());
 
-				System.out.printf("El resultado es: %.2f\n", numero1 / numero2);
+				System.out.printf("El resultado es: %.2f\n", divison1 / division2);
 
 				break;
+
 
 			case 3:
 				System.out.print("Introduce el primer valor: ");
@@ -49,7 +51,20 @@ public class Calculadora {
 
 				System.out.printf("El resultado es: %.2f\n", num1 + num2);
 
+
+			case 4:
+				System.out.print("Introduce el primer valor: ");
+				double resta1 = Integer.parseInt(teclado.nextLine());
+				
+				System.out.print("Introduce el segundo valor: ");
+				double resta2 = Integer.parseInt(teclado.nextLine());
+				
+				System.out.printf("El resultado es: %.2f\n", resta1-resta2);
+				break;
+
 			}
+			
+			System.out.println();
 
 		} while (opcion != 0);
 
