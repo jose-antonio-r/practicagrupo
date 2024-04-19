@@ -42,7 +42,6 @@ public class Calculadora {
 
 				break;
 
-
 			case 3:
 				System.out.print("Introduce el primer valor: ");
 				double num1 = Integer.parseInt(teclado.nextLine());
@@ -51,19 +50,18 @@ public class Calculadora {
 
 				System.out.printf("El resultado es: %.2f\n", num1 + num2);
 
-
 			case 4:
 				System.out.print("Introduce el primer valor: ");
 				double resta1 = Integer.parseInt(teclado.nextLine());
-				
-				System.out.print("Introduce el segundo valor: ");
+
+				System.out.print("Introduce el seg undo valor: ");
 				double resta2 = Integer.parseInt(teclado.nextLine());
-				
-				System.out.printf("El resultado es: %.2f\n", resta1-resta2);
+
+				System.out.printf("El resultado es: %.2f\n", resta1 - resta2);
 				break;
 
 			}
-			
+
 			System.out.println();
 
 		} while (opcion != 0);
