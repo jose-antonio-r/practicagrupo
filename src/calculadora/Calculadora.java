@@ -9,8 +9,6 @@ public class Calculadora {
 		
 		Scanner s = new Scanner(System.in);
 
-		System.out.println("Introduzca un numero del menu:" + "\n1. Multiplicacion " + "\n2. Division " + "\n3. Sumar"
-				+ "\n0. Salir");
 		while (num != 0) {
 			int numeroMenu = 0;
 			System.out.println("\nIntroduzca un numero del menu:" + "\n1. Multiplicacion " + "\n2. Division "
