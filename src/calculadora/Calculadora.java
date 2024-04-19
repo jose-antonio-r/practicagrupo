@@ -13,6 +13,7 @@ public class Calculadora {
 		System.out.println("-----CALCULADORA----");
 		System.out.println("0. Salir");
 		System.out.println("1. Multiplicar");
+		System.out.println("2. Restar");
 		System.out.println("--------------------");
 		System.out.print("Elige una opción: ");
 		opcion = Integer.parseInt(teclado.nextLine());
@@ -21,13 +22,25 @@ public class Calculadora {
 		switch (opcion) {
 		case 1:
 			System.out.print("Introduce el primer valor: ");
-			double valor1 = Integer.parseInt(teclado.nextLine());
+			double multiplicacion1 = Integer.parseInt(teclado.nextLine());
 			
 			System.out.print("Introduce el segundo valor: ");
-			double valor2 = Integer.parseInt(teclado.nextLine());
+			double multiplicacion2 = Integer.parseInt(teclado.nextLine());
 			
-			System.out.printf("El resultado es: %.2f\n", valor1*valor2);
+			System.out.printf("El resultado es: %.2f\n", multiplicacion1*multiplicacion2);
+			break;
+		case 2:
+			System.out.print("Introduce el primer valor: ");
+			double resta1 = Integer.parseInt(teclado.nextLine());
+			
+			System.out.print("Introduce el segundo valor: ");
+			double resta2 = Integer.parseInt(teclado.nextLine());
+			
+			System.out.printf("El resultado es: %.2f\n", resta1-resta2);
+			break;
 		}
+		
+		System.out.println();
 		
 		} while (opcion != 0);
 		
